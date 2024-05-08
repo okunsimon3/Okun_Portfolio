@@ -12,15 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates&display=swap" rel="stylesheet">
-    <script>
-        function openNav() {
-            document.querySelector('nav').classList.add('open')
-        }
-  
-        function closeNav() {
-            document.querySelector('nav').classList.remove('open')
-        }
-    </script>
+    <script defer src="script.js"></script> 
 </head>
 <body class="container">
     <header id="top-panel-media">
@@ -54,17 +46,5 @@
         </div>
     </main>
     <div class="moving-div"></div>
-    <script>
-        // Apply the class to move the div after a delay
-        setTimeout(function() {
-          var movingDiv = document.querySelector('.moving-div');
-          movingDiv.classList.add('move-down');
-    
-          // Remove the div from the DOM after it moves
-          setTimeout(function() {
-            movingDiv.remove();
-          }, 2000); // 2 seconds, adjust if needed
-        }, 400); // Adjust timing as needed
-      </script>
 </body>
 </html>

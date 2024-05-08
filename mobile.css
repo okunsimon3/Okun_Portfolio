@@ -56,9 +56,10 @@ nav.open {
     text-align: center;
     font-size: 4rem;
     margin-top: 1rem;
+    margin-bottom: 0;
 }
 .home-header {
-    padding-top: 1rem;
+    margin-top: 0;
 }
 .home-header h1 {
     display: none;

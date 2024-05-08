@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
 .container-home {
     padding: 10rem;
     padding-top: 3.5rem;
@@ -22,13 +28,13 @@ html {
 
 .home-header {
     text-align: center;
-    padding-top: 120px;
+    margin-top: 5rem;
 }
 .home-header h1 {
     font-size: 80px;
-    padding-bottom: 1.8rem;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
+    margin: 0;
 
 }
 /*Open and Close buttons Mobile*/
@@ -46,7 +52,6 @@ html {
 .home-header nav ul {
     padding-top: 2rem;
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
 }
 
@@ -393,4 +398,46 @@ label {
 .right-card li a:hover {
     color: #CCECFC;
     text-decoration: underline;
+}
+
+@media screen and (min-width: 820px) and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container h1 {
+        grid-column: 1/3;
+    }
+    main h2 {
+        grid-column: span 2;
+    }
+    .right-card-mobile {
+        display: block;
+    }
+    .right-card {
+        display: none;
+    }
+    
+    .right-card-mobile {
+        background-color: rgb(37, 37, 37);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        grid-column: span 2;
+    }
+    .right-card-mobile li{
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: white;
+        text-decoration: none; /* Remove default underline */
+        position: relative;
+        transition: color 0.3s;
+    }
+    .right-card-mobile li a {
+        text-decoration: none;
+        color: white;
+    }
+    .right-card-mobile li a:hover {
+        color: #CCECFC;
+        text-decoration: underline;
+    }
 }

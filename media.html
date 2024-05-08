@@ -13,15 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
-    <script>
-        function openNav() {
-            document.querySelector('nav').classList.add('open')
-        }
-  
-        function closeNav() {
-            document.querySelector('nav').classList.remove('open')
-        }
-    </script>
 </head>
 <body class="container">
     <header id="top-panel-media">
@@ -88,45 +79,14 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-        <h2>Music:</h2>
-        <div class="item-card">
-            <audio controls src="/music/fuck hoes.wav"></audio>
-        </div>
-        <div class="item-card">
-            <audio controls src="/music/geek.wav"></audio>
-        </div>
-        <div class="item-card">
-            <audio controls src="/music/coupe.wav"></audio>
-        </div>
-        <div class="item-card">
-            <audio controls src="/music/nascar.wav"></audio>
-        </div>
-        <div class="item-card">
-            <audio controls src="/music/vaportrap.wav"></audio>
-        </div>
-        <div class="item-card">
-            <audio controls src="/music/really good.wav"></audio>
-        </div>
         <h2>Video:</h2>
         <div class="item-card">
-            <iframe width="300" height="170" src="https://www.youtube.com/embed/8qE-aG6xktM?si=fxpGKmulNvj9av6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="340" height="190" src="https://www.youtube.com/embed/8qE-aG6xktM?si=fxpGKmulNvj9av6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="item-card">
-            <iframe width="300" height="170" src="https://www.youtube.com/embed/oRdCOZOhUyQ?si=VgvuFZG0ArJR89YZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="340" height="190" src="https://www.youtube.com/embed/oRdCOZOhUyQ?si=VgvuFZG0ArJR89YZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
     <div class="moving-div"></div>
-    <script>
-        // Apply the class to move the div after a delay
-        setTimeout(function() {
-          var movingDiv = document.querySelector('.moving-div');
-          movingDiv.classList.add('move-down');
-    
-          // Remove the div from the DOM after it moves
-          setTimeout(function() {
-            movingDiv.remove();
-          }, 2000); // 2 seconds, adjust if needed
-        }, 400); // Adjust timing as needed
-      </script>
 </body>
 </html>
