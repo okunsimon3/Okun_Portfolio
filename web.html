@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <meta name="author" content="Simon Okun">
+    <meta name="description" content="My Portfolio Website">
+    <link rel="stylesheet" href="/reset.css" type="text/css">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <link rel="stylesheet" href="/mobile.css" type="text/css" media="(max-width: 820px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <script>
+        function openNav() {
+            document.querySelector('nav').classList.add('open')
+        }
+  
+        function closeNav() {
+            document.querySelector('nav').classList.remove('open')
+        }
+    </script>
+</head>
+<body class="container">
+    <header id="top-panel-media">
+        <nav class="web-nav">
+            <img id="close-button" src="/images/close.png" alt="close button" onclick="closeNav()">
+            <ul>
+                <li><a href="/web.html">Web</a></li>
+                <li><a href="/media.html">Media</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img id="open-button" src="/images/hamburger-icon.png" alt="open button" onclick="openNav()">
+        <a class="home-link" href="/index.html">&times</a>
+    </header>
+    <main class="grid-container">
+        <h1>Web</h1>
+        <div class="item-card">
+            <img src="/images/bearcast.jpg" alt="logo of bearcast media, student media organization at the University of Cincinnati">
+            <h2>Bearcast Media</h2>
+            <a href="https://www.bearcastmedia.com" target="_blank">Click Here</a>
+        </div>
+        <div class="item-card">
+            <img src="images/bouquet_8.jpg" alt="logo of bearcast media, student media organization at the University of Cincinnati">
+            <h2>Flowers&</h2>
+            <a href="https://flowersand.us/" target="_blank">Click Here</a>
+        </div>
+        <div class="item-card">
+            <img src="images/pepsi.jpg" alt="logo of bearcast media, student media organization at the University of Cincinnati">
+            <h2>Bape Project</h2>
+            <a href="https://homepages.uc.edu/~okunsp/Bape-Project/" target="_blank">Click Here</a>
+        </div>
+    </main>
+    <div class="moving-div"></div>
+    <script>
+        // Apply the class to move the div after a delay
+        setTimeout(function() {
+          var movingDiv = document.querySelector('.moving-div');
+          movingDiv.classList.add('move-down');
+    
+          // Remove the div from the DOM after it moves
+          setTimeout(function() {
+            movingDiv.remove();
+          }, 2000); // 2 seconds, adjust if needed
+        }, 400); // Adjust timing as needed
+      </script>
+</body>
+</html>

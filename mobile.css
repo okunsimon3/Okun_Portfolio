@@ -1,0 +1,119 @@
+.home-header nav ul {
+    padding-top: 1rem;
+}
+
+#top-panel-media nav {
+    /* closed */
+    background: rgba(51,51,51,1);
+    position: fixed;
+    top: 0;
+    left: -75%;
+    height: 100%;
+    width: 75%;
+    padding: 1rem;
+    text-align: left;
+    z-index: 3;
+    padding-top: 2rem;
+    transition: 400ms ease-in;
+}
+nav a {
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+#open-button {
+    padding-left: 1rem;
+}
+#close-button {
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+nav.open {
+    left: 0 !important;
+}
+#top-panel-media ul {
+    display: block;
+    margin: 0;
+}
+#top-panel-media li {
+    padding-bottom: 1rem;
+}
+
+
+
+
+.container-home {
+    display: block;
+    padding: 0;
+}
+.home-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-title {
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+.home-header {
+    padding-top: 1rem;
+}
+.home-header h1 {
+    display: none;
+}
+
+/*web page*/
+.grid-container {
+    display: block;
+    margin: 1rem;
+}
+.grid-container h1 {
+    padding-top: 2.2rem;
+}
+
+/*contact form*/
+.right-card-mobile {
+    display: block;
+}
+.right-card {
+    display: none;
+}
+
+.right-card-mobile {
+    background-color: rgb(37, 37, 37);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.right-card-mobile li{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none; /* Remove default underline */
+    position: relative;
+    transition: color 0.3s;
+}
+.right-card-mobile li a {
+    text-decoration: none;
+    color: white;
+}
+.right-card-mobile li a:hover {
+    color: #CCECFC;
+    text-decoration: underline;
+}
+form {
+    display: block;
+    padding-bottom: 1rem;
+}
+form input {
+    width: 100%;
+}
+.span-4 {
+    width: 100%;
+}
+.submit {
+    display: block;
+    margin: 0 auto;
+}

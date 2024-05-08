@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Simon Okun">
+    <meta name="description" content="My Portfolio Website">
+    <link rel="stylesheet" href="/reset.css" type="text/css">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <link rel="stylesheet" href="/mobile.css" type="text/css" media="(max-width: 820px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script>
+        function openNav() {
+            document.querySelector('nav').classList.add('open')
+        }
+  
+        function closeNav() {
+            document.querySelector('nav').classList.remove('open')
+        }
+    </script>
+</head>
+<body class="container">
+    <header id="top-panel-media">
+        <nav class="web-nav">
+            <img id="close-button" src="/images/close.png" alt="close button" onclick="closeNav()">
+            <ul>
+                <li><a href="/web.html">Web</a></li>
+                <li><a href="/media.html">Media</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img id="open-button" src="/images/hamburger-icon.png" alt="open button" onclick="openNav()">
+        <a class="home-link" href="/index.html">&times</a>
+    </header>
+    <main class="grid-container">
+        <h1>Media</h1>
+        <h2>Photography:</h2>
+        <div class="item-card">
+            <img class="image" src="/images/DSCF1291.JPG" alt="A picture of a coastline french city"> 
+        </div>
+        <div class="item-card">
+            <img class="image" src="/images/DSCF1299.JPG" alt="A picture of a coastline french city"> 
+        </div>
+        <div class="item-card">
+            <img class="image" src="/images/DSCF1336.JPG" alt="A picture of a coastline french city"> 
+        </div>
+        <div class="item-card">
+            <img class="image" src="/images/DSCF1346.JPG" alt="A picture of a coastline french city"> 
+        </div>
+        <div class="item-card">
+            <img class="image" src="/images/DSCF1382.JPG" alt="A picture of a coastline french city"> 
+        </div>
+        <div class="item-card">
+            <img class="image" src="/images/DSCF1191.JPG" alt="A picture of a coastline french city"> 
+        </div>
+        <h2>Animation:</h2>
+        <div class="item-card">
+            <video width="320" height="240" controls>
+                <source src="/video/final_obstacle_course_okun.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item-card">
+            <video width="320" height="240" controls>
+                <source src="/video/final_audio_shot_okun2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item-card">
+            <video width="320" height="240" controls>
+                <source src="/video/sit-down_okun_polish.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item-card">
+            <video width="320" height="240" controls>
+                <source src="/video/Okun_Tail_Emotion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="item-card">
+            <video width="320" height="240" controls>
+                <source src="/video/Okun_Walk_Entire_Character.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h2>Music:</h2>
+        <div class="item-card">
+            <audio controls src="/music/fuck hoes.wav"></audio>
+        </div>
+        <div class="item-card">
+            <audio controls src="/music/geek.wav"></audio>
+        </div>
+        <div class="item-card">
+            <audio controls src="/music/coupe.wav"></audio>
+        </div>
+        <div class="item-card">
+            <audio controls src="/music/nascar.wav"></audio>
+        </div>
+        <div class="item-card">
+            <audio controls src="/music/vaportrap.wav"></audio>
+        </div>
+        <div class="item-card">
+            <audio controls src="/music/really good.wav"></audio>
+        </div>
+        <h2>Video:</h2>
+        <div class="item-card">
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/8qE-aG6xktM?si=fxpGKmulNvj9av6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item-card">
+            <iframe width="300" height="170" src="https://www.youtube.com/embed/oRdCOZOhUyQ?si=VgvuFZG0ArJR89YZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <div class="moving-div"></div>
+    <script>
+        // Apply the class to move the div after a delay
+        setTimeout(function() {
+          var movingDiv = document.querySelector('.moving-div');
+          movingDiv.classList.add('move-down');
+    
+          // Remove the div from the DOM after it moves
+          setTimeout(function() {
+            movingDiv.remove();
+          }, 2000); // 2 seconds, adjust if needed
+        }, 400); // Adjust timing as needed
+      </script>
+</body>
+</html>
