@@ -1,3 +1,7 @@
+.home-header nav {
+    padding: 0;
+}
+
 .home-header nav ul {
     padding-top: 1rem;
 }

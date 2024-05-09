@@ -6,6 +6,12 @@ body {
 }
 ul {
     list-style-type: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 .container-home {
     padding: 10rem;
@@ -48,11 +54,16 @@ html {
     font-size: 30px;
     margin-bottom: 1.5rem;
 }
-
+.home-header nav {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
 .home-header nav ul {
     padding-top: 2rem;
     display: flex;
     text-align: center;
+    padding: 0;
+    justify-content: space-evenly
 }
 
 .home-header a {
@@ -102,7 +113,7 @@ html {
 
 .resume-download {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
 
@@ -111,7 +122,7 @@ html {
     text-decoration: none;
     font-size: 1.25rem;
     padding: 1rem 2.5rem 1rem 1.5rem;
-    margin-right: 2rem;
+    margin-right: 1.8rem;
     background-color: rgb(37, 37, 37);
     color: white;
     position: relative;
@@ -205,7 +216,7 @@ html {
 #top-panel-media ul {
     display: flex;
     gap: 5rem;
-    margin-left: 4rem;
+    padding-left: 2rem;
 }
 
 .home-link {
@@ -215,7 +226,7 @@ html {
     right: 0;
     color: #CCECFC;
     text-decoration: none;
-    padding-right: 1rem;
+    padding-right: 2rem;
     transition: 200ms ease-in;
 }
 .home-link:hover {
@@ -236,6 +247,7 @@ html {
     object-position: 50% 50%;
     filter: brightness(30%)saturate(80%);
     border-radius: 1rem;
+    pointer-events: none;
 }
 .item-card h2 {
     position: absolute;
@@ -264,12 +276,14 @@ html {
 main h2 {
     grid-column: span 3;
     font-size: 2rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin: 0;
 }
 
 main h2:nth-child(2) {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    margin: 0;
 }
 
 
@@ -279,6 +293,7 @@ main h2:nth-child(2) {
 .image {
     filter: none !important;
     cursor: pointer;
+    pointer-events: all !important;
     
 }
 .image:hover  {
@@ -337,6 +352,8 @@ form {
 }
 form div {
     padding-bottom: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 form input {
     margin-top: 1rem;
@@ -347,13 +364,14 @@ form input {
 }
 .text-box {
     grid-column: span 2;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 .span-4 {
     border-radius: .5rem;
     border: 2px solid black;
     padding: .5rem;
-    width: 619px;
-    max-width: 619px;
+    width: 100%;
 }
 label {
     font-size: 1.5rem;
@@ -371,6 +389,9 @@ label {
     color: white;
     transition: 200ms ease-in;
     cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
 }
 .submit:hover {
     color: #CCECFC;
@@ -381,7 +402,9 @@ label {
     border-radius: 1rem;
     padding: 1rem;
 }
-
+.right-card ul {
+    padding: 0;
+}
 .right-card li{
     font-size: 1.5rem;
     padding: 1rem;
@@ -439,5 +462,8 @@ label {
     .right-card-mobile li a:hover {
         color: #CCECFC;
         text-decoration: underline;
+    }
+    form {
+        justify-items: baseline;
     }
 }
