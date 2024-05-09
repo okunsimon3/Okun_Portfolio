@@ -37,13 +37,14 @@
         </ul>
       </div>
         <div class="full-card">
-            <form>
+            <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+              <input class="d-none" name="bot-field">
                 <div>
-                  <label for="firstName">First Name</label><br>
+                  <label for="firstName">First Name*</label><br>
                   <input name="firstName" type="text" required />
                 </div>
                 <div>
-                  <label for="lastName">Last Name</label><br>
+                  <label for="lastName">Last Name*</label><br>
                   <input name="lastName" type="text" required />
                 </div>
                 <div>
@@ -51,7 +52,7 @@
                   <input name="phoneNumber" type="tel" pattern="^\d{3}-\d{3}-\d{4}$"/>
                 </div>
                 <div>
-                  <label for="email">Email Address</label><br>
+                  <label for="email">Email Address*</label><br>
                   <input name="email" type="email" required/>
                 </div>
                 <div class="text-box">
